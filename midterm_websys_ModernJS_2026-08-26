@@ -1,0 +1,45 @@
+// Student information
+const student ={           //student- varialble name              variable- student,name,age,ourse,updatedStudent,subjects,nickname
+    name    :"Jee Ann",    //object/key- name,age,course,address,city 
+    age     :"20",         //value- Jee ann, 20, BSIT, Iloilo
+    course  :"BSIT", 
+     address: {           //nested object  
+        city: "Iloilo"
+    }
+};
+
+// 1. Destructuring       gina kwa ya ang properties halin sa student object ang name, age, course
+const {name, age, course} = student; 
+
+// 2. Spread Operator//     gina copy ang properties sang student pakadto sa bago nga object
+const updatedStudent = {
+    ...student,             //gina copy all properties kag nag butang pagid sang bago nga object      
+    year:"2nd year"  
+};
+
+// Ginapasa ang 3 ka subjects sa function kag ginastore ang result sa getsubjects nga varaible
+const subjects = getSubjects("JavaScript", "Database", "Networking");
+
+// 3. Rest Parameters    gina collect ya ang tanan nga agruments nga gin passa sa function kag himuon nga arra. para isa lng kapag tawag   
+function getSubjects (...subjects){
+    return subjects;
+}
+
+// 4. Template Literals     Ginacombine niya ang text kag variable sa isa ka string.
+console.log (`My name is ${name}`);   
+console.log (`I am ${age} years old`);
+console.log (`${course} student`);
+
+// 5. Optional Chaining      
+console.log(`City: ${student.address?.city}`);
+
+// 6. Nullish Coalescing    Nagahatag sang default value kung wala ang value.
+const nickname = student.nickname ?? "No nickname";
+console.log (`Nickname: ${nickname}.`);
+
+// Display spread result
+console.log("Updated Student:",updatedStudent);  
+
+// Display result subjects
+console.log("Subjects:", subjects);
+
