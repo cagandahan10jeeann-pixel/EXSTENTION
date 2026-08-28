@@ -1,4 +1,4 @@
-const db = require("../config/db");
+const db = require("../config/db"); git status
 
 // GET all students
 exports.getStudents = (req, res) => {
