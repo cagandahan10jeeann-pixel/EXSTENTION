@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Zodiac World</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+<body>
+
+<!-- ==========================================
+     NAVBAR
+========================================== -->
+
+<nav class="navbar">
+
+    <div class="logo">
+        ✬ Zodiac World
+    </div>
+
+    <div class="nav-links">
+
+        <button
+            class="nav-btn active"
+            data-page="home"
+        >
+            Home
+        </button>
+
+        <button
+            class="nav-btn"
+            data-page="zodiac"
+        >
+            Zodiac Signs
+        </button>
+
+        <button
+            class="nav-btn"
+            data-page="about"
+        >
+            About
+        </button>
+
+    </div>
+
+</nav>
+
+
+<!-- ==========================================
+     HOME
+========================================== -->
+
+<section
+    id="home"
+    class="page active-page"
+>
+
+    <div class="hero">
+
+        <div class="hero-content">
+
+            <p class="small-title">
+                EXPLORE THE STARS
+            </p>
+
+            <h1>
+                Discover Your
+                <span>Zodiac</span>
+            </h1>
+
+            <p class="hero-description">
+
+                Explore the twelve zodiac signs,
+                their elements, ruling planets,
+                personalities, strengths,
+                and weaknesses.
+
+            </p>
+
+            <button
+                id="explore-btn"
+                class="primary-btn"
+            >
+                Explore Zodiac Signs ✦
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     ZODIAC LIST
+========================================== -->
+
+<section
+    id="zodiac"
+    class="page"
+>
+
+    <div class="section-header">
+
+        <p class="small-title">
+            THE TWELVE SIGNS
+        </p>
+
+        <h2>
+            Zodiac Signs
+        </h2>
+
+        <p>
+            Click a zodiac sign to discover more.
+        </p>
+
+    </div>
+
+
+    <div
+        id="zodiac-container"
+        class="zodiac-grid"
+    >
+
+        <div class="loading">
+            Loading Zodiac Signs...
+        </div>
+
+    </div>
+
+
+    <!-- ======================================
+         ZODIAC DETAILS
+    ======================================= -->
+
+    <div
+        id="zodiac-details"
+        class="zodiac-details"
+    >
+
+        <!-- CONSTELLATION -->
+
+        <div
+            id="constellation"
+            class="constellation"
+        ></div>
+
+
+        <div class="details-wrapper">
+
+            <!-- BACK BUTTON -->
+
+            <button
+                id="close-details"
+                class="back-button"
+            >
+                ← Back to Zodiac Signs
+            </button>
+
+
+            <!-- SYMBOL -->
+
+            <div
+                id="details-symbol"
+                class="details-symbol"
+            >
+                ♊
+            </div>
+
+
+            <div
+                id="details-element"
+                class="details-element"
+            >
+                AIR
+            </div>
+
+
+            <h1
+                id="details-name"
+                class="details-name"
+            >
+                Gemini
+            </h1>
+
+
+            <p
+                id="details-date"
+                class="details-date"
+            >
+                May 21 - June 20
+            </p>
+
+
+            <!-- BASIC INFORMATION -->
+
+            <div class="detail-boxes">
+
+                <div class="detail-box">
+
+                    <span>
+                        🌬️ Element
+                    </span>
+
+                    <strong
+                        id="details-element-value"
+                    >
+                        Air
+                    </strong>
+
+                </div>
+
+
+                <div class="detail-box">
+
+                    <span>
+                        🪐 Ruling Planet
+                    </span>
+
+                    <strong
+                        id="details-planet"
+                    >
+                        Mercury
+                    </strong>
+
+                </div>
+
+
+                <div class="detail-box">
+
+                    <span>
+                        📅 Date
+                    </span>
+
+                    <strong
+                        id="details-date-value"
+                    >
+                        May 21 - June 20
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <!-- PERSONALITY + ABOUT -->
+
+            <div class="details-content">
+
+                <div class="content-card">
+
+                    <h3>
+                        ❤️ Personality
+                    </h3>
+
+                    <p
+                        id="details-personality"
+                    >
+                        Curious, social, adaptable,
+                        intelligent, and communicative.
+                    </p>
+
+                </div>
+
+
+                <div class="content-card">
+
+                    <h3>
+                        ✨ About
+                    </h3>
+
+                    <p
+                        id="details-description"
+                    >
+                        Gemini are curious and social
+                        people who enjoy learning.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- STRENGTHS + WEAKNESSES -->
+
+            <div class="traits-grid">
+
+                <div class="traits-column">
+
+                    <h3>
+                        💪 Strengths
+                    </h3>
+
+                    <ul
+                        id="strengths-list"
+                    ></ul>
+
+                </div>
+
+
+                <div class="traits-column">
+
+                    <h3>
+                        ⚠️ Weaknesses
+                    </h3>
+
+                    <ul
+                        id="weaknesses-list"
+                    ></ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     ABOUT
+========================================== -->
+
+<section
+    id="about"
+    class="page"
+>
+
+    <div class="about-card">
+
+        <div class="about-symbol">
+         ✧⭒
+        </div>
+
+        <p class="small-title">
+            ABOUT THE WEBSITE
+        </p>
+
+        <h2>
+            Zodiac World
+        </h2>
+
+        <p>
+
+            Zodiac World is a simple web application
+            created to provide information about the
+            twelve zodiac signs.
+
+        </p>
+
+        <p>
+
+            Users can browse the zodiac signs and
+            click each sign to view its personality,
+            element, ruling planet, strengths,
+            weaknesses, and other information.
+
+        </p>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

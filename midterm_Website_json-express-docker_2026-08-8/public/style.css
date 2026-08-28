@@ -1,0 +1,1148 @@
+/* ==========================================
+   RESET
+========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+
+    color: rgba(255, 255, 255, 0.9);
+
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(90, 70, 180, 0.28),
+            transparent 45%
+        ),
+        #070714;
+
+    overflow-x: hidden;
+}
+
+
+/* ==========================================
+   NAVBAR
+========================================== */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    height: 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 8px 4%;
+
+    background: rgba(10, 10, 25, 0.48);
+
+    backdrop-filter: blur(16px);
+
+    border-bottom:
+        1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo {
+    font-size: 17px;
+    font-weight: bold;
+
+    color: rgba(255, 255, 255, 0.82);
+
+    letter-spacing: 0.5px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 5px;
+}
+
+.nav-btn {
+    padding: 7px 13px;
+
+    border: 1px solid transparent;
+    border-radius: 18px;
+
+    color: rgba(255, 255, 255, 0.62);
+
+    background: transparent;
+
+    cursor: pointer;
+
+    font-size: 12px;
+
+    transition: 0.2s ease;
+}
+
+.nav-btn:hover,
+.nav-btn.active {
+    color: rgba(255, 255, 255, 0.9);
+
+    background:
+        rgba(255, 255, 255, 0.08);
+
+    border-color:
+        rgba(255, 255, 255, 0.1);
+}
+
+
+/* ==========================================
+   PAGE
+========================================== */
+
+.page {
+    display: none;
+
+    min-height:
+        calc(100vh - 58px);
+
+    padding:
+        35px 4%;
+}
+
+.page.active-page {
+    display: block;
+}
+
+
+/* ==========================================
+   HOME
+========================================== */
+
+.hero {
+    min-height:
+        calc(100vh - 130px);
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.small-title {
+    font-size: 9px;
+
+    letter-spacing: 3px;
+
+    color:
+        rgba(255, 255, 255, 0.42);
+
+    margin-bottom: 12px;
+}
+
+.hero h1 {
+    font-size:
+        clamp(40px, 6vw, 65px);
+
+    line-height: 1;
+
+    margin-bottom: 18px;
+
+    color:
+        rgba(255, 255, 255, 0.78);
+}
+
+.hero h1 span {
+    color:
+        rgba(190, 170, 255, 0.75);
+}
+
+.hero-description {
+    max-width: 540px;
+
+    margin: auto;
+
+    line-height: 1.6;
+
+    font-size: 13px;
+
+    color:
+        rgba(255, 255, 255, 0.45);
+}
+
+.primary-btn {
+    margin-top: 22px;
+
+    padding:
+        9px 18px;
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.13);
+
+    border-radius: 20px;
+
+    color:
+        rgba(255, 255, 255, 0.7);
+
+    background:
+        rgba(255, 255, 255, 0.06);
+
+    backdrop-filter:
+        blur(10px);
+
+    cursor: pointer;
+
+    font-size: 12px;
+
+    transition: 0.2s ease;
+}
+
+.primary-btn:hover {
+    background:
+        rgba(255, 255, 255, 0.11);
+
+    transform:
+        translateY(-2px);
+}
+
+
+/* ==========================================
+   ZODIAC HEADER
+========================================== */
+
+.section-header {
+    text-align: center;
+
+    margin-bottom: 20px;
+}
+
+.section-header h2 {
+    font-size:
+        clamp(30px, 4vw, 45px);
+
+    color:
+        rgba(255, 255, 255, 0.76);
+
+    margin-bottom: 5px;
+}
+
+.section-header p:last-child {
+    font-size: 12px;
+
+    color:
+        rgba(255, 255, 255, 0.4);
+}
+
+
+/* ==========================================
+   ZODIAC GRID
+========================================== */
+
+.zodiac-grid {
+    width: 100%;
+
+    max-width: 950px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 11px;
+}
+
+
+/* ==========================================
+   ZODIAC CARD
+========================================== */
+
+.zodiac-card {
+    min-height: 125px;
+
+    padding: 12px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    cursor: pointer;
+
+    border-radius: 17px;
+
+    background:
+        rgba(255, 255, 255, 0.045);
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.1);
+
+    backdrop-filter:
+        blur(12px);
+
+    transition: 0.22s ease;
+}
+
+.zodiac-card:hover {
+    transform:
+        translateY(-4px);
+
+    background:
+        rgba(255, 255, 255, 0.085);
+
+    border-color:
+        rgba(255, 255, 255, 0.18);
+}
+
+.zodiac-symbol {
+    font-size: 31px;
+
+    line-height: 1;
+
+    margin-bottom: 6px;
+
+    color:
+        rgba(255, 255, 255, 0.72);
+}
+
+.zodiac-card h3 {
+    font-size: 15px;
+
+    font-weight: 600;
+
+    margin-bottom: 4px;
+
+    color:
+        rgba(255, 255, 255, 0.75);
+}
+
+.zodiac-date {
+    font-size: 9px;
+
+    margin-bottom: 6px;
+
+    color:
+        rgba(255, 255, 255, 0.38);
+}
+
+.zodiac-element {
+    font-size: 8px;
+
+    padding:
+        3px 8px;
+
+    border-radius: 10px;
+
+    color:
+        rgba(255, 255, 255, 0.45);
+
+    background:
+        rgba(255, 255, 255, 0.045);
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.07);
+}
+
+
+/* ==========================================
+   ZODIAC DETAILS
+========================================== */
+
+.zodiac-details {
+    position: relative;
+
+    width: 100%;
+
+    max-width: 950px;
+
+    min-height: 570px;
+
+    margin: 15px auto 0;
+
+    display: none;
+
+    overflow: hidden;
+
+    border-radius: 23px;
+
+    background:
+        rgba(255, 255, 255, 0.04);
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.11);
+
+    backdrop-filter:
+        blur(17px);
+}
+
+
+/* ==========================================
+   CONSTELLATION
+========================================== */
+
+.constellation {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    pointer-events: none;
+
+    z-index: 1;
+
+    opacity: 0.65;
+}
+
+.constellation-star {
+    position: absolute;
+
+    width: 5px;
+    height: 5px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(255, 255, 255, 0.9);
+
+    box-shadow:
+        0 0 5px
+        rgba(255, 255, 255, 0.7),
+
+        0 0 10px
+        rgba(255, 255, 255, 0.4);
+
+    transform:
+        translate(-50%, -50%);
+}
+
+.constellation-star.big {
+    width: 8px;
+    height: 8px;
+}
+
+.constellation-line {
+    position: absolute;
+
+    height: 1px;
+
+    background:
+        rgba(255, 255, 255, 0.25);
+
+    transform-origin:
+        left center;
+}
+
+
+/* ==========================================
+   DETAILS WRAPPER
+========================================== */
+
+.details-wrapper {
+    position: relative;
+
+    z-index: 3;
+
+    padding:
+        20px 30px 25px;
+
+    text-align: center;
+}
+
+
+/* ==========================================
+   BACK BUTTON
+========================================== */
+
+.back-button {
+    display: block;
+
+    margin:
+        0 auto 4px;
+
+    padding:
+        6px 13px;
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.12);
+
+    border-radius: 16px;
+
+    color:
+        rgba(255, 255, 255, 0.58);
+
+    background:
+        rgba(255, 255, 255, 0.05);
+
+    cursor: pointer;
+
+    font-size: 10px;
+
+    backdrop-filter:
+        blur(10px);
+
+    transition: 0.2s ease;
+}
+
+.back-button:hover {
+    color:
+        rgba(255, 255, 255, 0.9);
+
+    background:
+        rgba(255, 255, 255, 0.1);
+}
+
+
+/* ==========================================
+   DETAILS SYMBOL
+========================================== */
+
+.details-symbol {
+    font-size:
+        clamp(50px, 7vw, 72px);
+
+    line-height: 1;
+
+    color:
+        rgba(255, 255, 255, 0.7);
+
+    margin-top: 2px;
+
+    filter:
+        drop-shadow(
+            0 0 12px
+            rgba(255, 255, 255, 0.3)
+        );
+}
+
+.details-element {
+    margin-top: 3px;
+
+    font-size: 8px;
+
+    letter-spacing: 3px;
+
+    color:
+        rgba(255, 255, 255, 0.4);
+}
+
+.details-name {
+    font-size:
+        clamp(30px, 4vw, 45px);
+
+    margin:
+        3px 0;
+
+    color:
+        rgba(255, 255, 255, 0.76);
+}
+
+.details-date {
+    font-size: 10px;
+
+    color:
+        rgba(255, 255, 255, 0.4);
+
+    margin-bottom: 13px;
+}
+
+
+/* ==========================================
+   DETAIL BOXES
+========================================== */
+
+.detail-boxes {
+    max-width: 680px;
+
+    margin:
+        0 auto 12px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 8px;
+}
+
+.detail-box {
+    padding:
+        9px 7px;
+
+    border-radius: 12px;
+
+    background:
+        rgba(255, 255, 255, 0.045);
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.08);
+
+    backdrop-filter:
+        blur(8px);
+}
+
+.detail-box span {
+    display: block;
+
+    font-size: 8px;
+
+    margin-bottom: 3px;
+
+    color:
+        rgba(255, 255, 255, 0.35);
+}
+
+.detail-box strong {
+    display: block;
+
+    font-size: 10px;
+
+    font-weight: 500;
+
+    color:
+        rgba(255, 255, 255, 0.65);
+}
+
+
+/* ==========================================
+   DETAILS CONTENT
+========================================== */
+
+.details-content {
+    max-width: 760px;
+
+    margin:
+        0 auto 9px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 8px;
+}
+
+.content-card {
+    text-align: left;
+
+    padding: 12px;
+
+    border-radius: 13px;
+
+    background:
+        rgba(255, 255, 255, 0.045);
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.08);
+
+    backdrop-filter:
+        blur(8px);
+}
+
+.content-card h3 {
+    font-size: 11px;
+
+    margin-bottom: 5px;
+
+    color:
+        rgba(255, 255, 255, 0.62);
+}
+
+.content-card p {
+    font-size: 9px;
+
+    line-height: 1.5;
+
+    color:
+        rgba(255, 255, 255, 0.42);
+}
+
+
+/* ==========================================
+   STRENGTHS / WEAKNESSES
+========================================== */
+
+.traits-grid {
+    max-width: 760px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 8px;
+}
+
+.traits-column {
+    text-align: left;
+
+    padding: 11px;
+
+    border-radius: 13px;
+
+    background:
+        rgba(255, 255, 255, 0.045);
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.08);
+}
+
+.traits-column h3 {
+    font-size: 11px;
+
+    margin-bottom: 4px;
+
+    color:
+        rgba(255, 255, 255, 0.6);
+}
+
+.traits-column ul {
+    list-style: none;
+}
+
+.traits-column li {
+    font-size: 9px;
+
+    padding: 2px 0;
+
+    color:
+        rgba(255, 255, 255, 0.4);
+}
+
+.traits-column li::before {
+    content: "✦";
+
+    margin-right: 5px;
+
+    color:
+        rgba(255, 255, 255, 0.5);
+}
+
+
+/* ==========================================
+   ZODIAC THEMES
+========================================== */
+
+.zodiac-details.theme-aries {
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(255, 80, 70, 0.28),
+            transparent 50%
+        ),
+        rgba(45, 15, 25, 0.86);
+}
+
+.zodiac-details.theme-taurus {
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(100, 190, 130, 0.24),
+            transparent 50%
+        ),
+        rgba(15, 40, 30, 0.86);
+}
+
+.zodiac-details.theme-gemini {
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(150, 110, 255, 0.28),
+            transparent 50%
+        ),
+        rgba(25, 20, 55, 0.86);
+}
+
+.zodiac-details.theme-cancer {
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(100, 190, 255, 0.24),
+            transparent 50%
+        ),
+        rgba(12, 35, 60, 0.86);
+}
+
+.zodiac-details.theme-leo {
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(255, 190, 50, 0.28),
+            transparent 50%
+        ),
+        rgba(60, 30, 10, 0.86);
+}
+
+.zodiac-details.theme-virgo {
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(150, 200, 130, 0.24),
+            transparent 50%
+        ),
+        rgba(30, 45, 30, 0.86);
+}
+
+.zodiac-details.theme-libra {
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(255, 150, 210, 0.26),
+            transparent 50%
+        ),
+        rgba(50, 25, 50, 0.86);
+}
+
+.zodiac-details.theme-scorpio {
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(220, 50, 80, 0.27),
+            transparent 50%
+        ),
+        rgba(45, 10, 25, 0.86);
+}
+
+.zodiac-details.theme-sagittarius {
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(80, 140, 255, 0.26),
+            transparent 50%
+        ),
+        rgba(15, 25, 60, 0.86);
+}
+
+.zodiac-details.theme-capricorn {
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(160, 170, 200, 0.23),
+            transparent 50%
+        ),
+        rgba(25, 30, 45, 0.86);
+}
+
+.zodiac-details.theme-aquarius {
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(40, 210, 255, 0.26),
+            transparent 50%
+        ),
+        rgba(5, 40, 55, 0.86);
+}
+
+.zodiac-details.theme-pisces {
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(80, 170, 255, 0.26),
+            transparent 50%
+        ),
+        rgba(10, 30, 60, 0.86);
+}
+
+
+/* ==========================================
+   ABOUT
+========================================== */
+
+.about-card {
+    width: 100%;
+
+    max-width: 750px;
+
+    margin:
+        30px auto;
+
+    padding:
+        30px;
+
+    text-align: center;
+
+    border-radius: 24px;
+
+    background:
+        rgba(255, 255, 255, 0.045);
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.1);
+
+    backdrop-filter:
+        blur(15px);
+}
+
+.about-symbol {
+    font-size: 40px;
+
+    margin-bottom: 10px;
+}
+
+.about-card h2 {
+    font-size:
+        clamp(35px, 5vw, 50px);
+
+    margin-bottom: 15px;
+
+    color:
+        rgba(255, 255, 255, 0.75);
+}
+
+.about-card > p:not(.small-title) {
+    font-size: 12px;
+
+    line-height: 1.7;
+
+    color:
+        rgba(255, 255, 255, 0.42);
+
+    margin-bottom: 10px;
+}
+
+.tech-stack {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 8px;
+
+    margin-top: 18px;
+}
+
+.tech-stack div {
+    padding: 10px 6px;
+
+    border-radius: 12px;
+
+    background:
+        rgba(255, 255, 255, 0.04);
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.07);
+}
+
+.tech-stack strong {
+    display: block;
+
+    font-size: 10px;
+
+    color:
+        rgba(255, 255, 255, 0.6);
+
+    margin-bottom: 3px;
+}
+
+.tech-stack span {
+    font-size: 8px;
+
+    color:
+        rgba(255, 255, 255, 0.32);
+}
+
+
+/* ==========================================
+   ERROR / LOADING
+========================================== */
+
+.loading,
+.error-message {
+    grid-column: 1 / -1;
+
+    text-align: center;
+
+    padding: 30px;
+
+    font-size: 12px;
+
+    color:
+        rgba(255, 255, 255, 0.4);
+}
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 900px) {
+
+    .zodiac-grid {
+        grid-template-columns:
+            repeat(3, 1fr);
+    }
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 650px) {
+
+    .navbar {
+        height: auto;
+
+        min-height: 58px;
+
+        flex-direction: column;
+
+        gap: 5px;
+
+        padding: 7px 3%;
+    }
+
+    .nav-links {
+        width: 100%;
+
+        justify-content: center;
+    }
+
+    .page {
+        padding:
+            25px 3%;
+    }
+
+    .zodiac-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 8px;
+    }
+
+    .zodiac-card {
+        min-height: 115px;
+
+        padding: 9px;
+    }
+
+    .zodiac-symbol {
+        font-size: 27px;
+    }
+
+    .zodiac-card h3 {
+        font-size: 13px;
+    }
+
+    .details-wrapper {
+        padding:
+            18px 15px 20px;
+    }
+
+    .detail-boxes {
+        grid-template-columns:
+            1fr 1fr 1fr;
+    }
+
+    .details-content,
+    .traits-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+    .zodiac-details {
+        min-height: 650px;
+    }
+
+    .about-card {
+        padding: 25px 18px;
+    }
+
+    .tech-stack {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+/* ==========================================
+   SMALL PHONE
+========================================== */
+
+@media (max-width: 420px) {
+
+    .logo {
+        font-size: 15px;
+    }
+
+    .nav-btn {
+        padding:
+            6px 9px;
+
+        font-size: 10px;
+    }
+
+    .zodiac-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .zodiac-card {
+        min-height: 108px;
+    }
+
+    .zodiac-symbol {
+        font-size: 24px;
+    }
+
+    .zodiac-card h3 {
+        font-size: 12px;
+    }
+
+    .zodiac-date {
+        font-size: 8px;
+    }
+
+    .zodiac-element {
+        font-size: 7px;
+    }
+
+    .details-symbol {
+        font-size: 50px;
+    }
+
+    .details-name {
+        font-size: 30px;
+    }
+
+    .detail-box {
+        padding: 7px 4px;
+    }
+
+    .detail-box span {
+        font-size: 7px;
+    }
+
+    .detail-box strong {
+        font-size: 8px;
+    }
+
+}

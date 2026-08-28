@@ -1,0 +1,254 @@
+[
+    {
+        "name": "Aries",
+        "symbol": "♈",
+        "date": "March 21 - April 19",
+        "element": "Fire",
+        "planet": "Mars",
+        "personality": "Brave, confident, energetic, passionate, and adventurous.",
+        "description": "Aries are energetic and courageous people who enjoy taking action, leading others, and exploring new challenges.",
+        "strengths": [
+            "Brave",
+            "Confident",
+            "Energetic",
+            "Determined"
+        ],
+        "weaknesses": [
+            "Impatient",
+            "Impulsive",
+            "Stubborn",
+            "Short-tempered"
+        ]
+    },
+    {
+        "name": "Taurus",
+        "symbol": "♉",
+        "date": "April 20 - May 20",
+        "element": "Earth",
+        "planet": "Venus",
+        "personality": "Reliable, patient, practical, loyal, and calm.",
+        "description": "Taurus are dependable people who appreciate comfort, stability, beauty, and the simple things in life.",
+        "strengths": [
+            "Reliable",
+            "Patient",
+            "Loyal",
+            "Practical"
+        ],
+        "weaknesses": [
+            "Stubborn",
+            "Possessive",
+            "Resistant to change",
+            "Materialistic"
+        ]
+    },
+    {
+        "name": "Gemini",
+        "symbol": "♊",
+        "date": "May 21 - June 20",
+        "element": "Air",
+        "planet": "Mercury",
+        "personality": "Curious, social, adaptable, intelligent, and communicative.",
+        "description": "Gemini are curious and social people who enjoy learning, communicating, and exploring different ideas.",
+        "strengths": [
+            "Curious",
+            "Adaptable",
+            "Intelligent",
+            "Communicative"
+        ],
+        "weaknesses": [
+            "Inconsistent",
+            "Restless",
+            "Indecisive",
+            "Easily distracted"
+        ]
+    },
+    {
+        "name": "Cancer",
+        "symbol": "♋",
+        "date": "June 21 - July 22",
+        "element": "Water",
+        "planet": "Moon",
+        "personality": "Caring, emotional, loyal, protective, and sensitive.",
+        "description": "Cancer are caring people who value family, friendship, emotional connection, and a comfortable home.",
+        "strengths": [
+            "Caring",
+            "Loyal",
+            "Protective",
+            "Empathetic"
+        ],
+        "weaknesses": [
+            "Sensitive",
+            "Moody",
+            "Insecure",
+            "Overly emotional"
+        ]
+    },
+    {
+        "name": "Leo",
+        "symbol": "♌",
+        "date": "July 23 - August 22",
+        "element": "Fire",
+        "planet": "Sun",
+        "personality": "Confident, generous, creative, passionate, and charismatic.",
+        "description": "Leo are confident and expressive people who enjoy creativity, leadership, attention, and making others happy.",
+        "strengths": [
+            "Confident",
+            "Generous",
+            "Creative",
+            "Charismatic"
+        ],
+        "weaknesses": [
+            "Proud",
+            "Stubborn",
+            "Attention-seeking",
+            "Dramatic"
+        ]
+    },
+    {
+        "name": "Virgo",
+        "symbol": "♍",
+        "date": "August 23 - September 22",
+        "element": "Earth",
+        "planet": "Mercury",
+        "personality": "Organized, intelligent, practical, careful, and hardworking.",
+        "description": "Virgo are thoughtful and organized people who enjoy helping others, solving problems, and improving their surroundings.",
+        "strengths": [
+            "Organized",
+            "Hardworking",
+            "Practical",
+            "Intelligent"
+        ],
+        "weaknesses": [
+            "Overthinking",
+            "Critical",
+            "Perfectionist",
+            "Worrying"
+        ]
+    },
+    {
+        "name": "Libra",
+        "symbol": "♎",
+        "date": "September 23 - October 22",
+        "element": "Air",
+        "planet": "Venus",
+        "personality": "Friendly, diplomatic, charming, peaceful, and social.",
+        "description": "Libra are social and peaceful people who value balance, fairness, beauty, and good relationships.",
+        "strengths": [
+            "Diplomatic",
+            "Friendly",
+            "Fair",
+            "Charming"
+        ],
+        "weaknesses": [
+            "Indecisive",
+            "Avoids conflict",
+            "People-pleasing",
+            "Dependent"
+        ]
+    },
+    {
+        "name": "Scorpio",
+        "symbol": "♏",
+        "date": "October 23 - November 21",
+        "element": "Water",
+        "planet": "Pluto",
+        "personality": "Passionate, mysterious, loyal, determined, and brave.",
+        "description": "Scorpio are passionate and determined people who value trust, loyalty, deep connections, and personal strength.",
+        "strengths": [
+            "Passionate",
+            "Loyal",
+            "Determined",
+            "Brave"
+        ],
+        "weaknesses": [
+            "Jealous",
+            "Secretive",
+            "Stubborn",
+            "Possessive"
+        ]
+    },
+    {
+        "name": "Sagittarius",
+        "symbol": "♐",
+        "date": "November 22 - December 21",
+        "element": "Fire",
+        "planet": "Jupiter",
+        "personality": "Adventurous, optimistic, honest, independent, and energetic.",
+        "description": "Sagittarius are adventurous people who enjoy traveling, learning, discovering new experiences, and being independent.",
+        "strengths": [
+            "Adventurous",
+            "Optimistic",
+            "Honest",
+            "Independent"
+        ],
+        "weaknesses": [
+            "Impatient",
+            "Blunt",
+            "Restless",
+            "Careless"
+        ]
+    },
+    {
+        "name": "Capricorn",
+        "symbol": "♑",
+        "date": "December 22 - January 19",
+        "element": "Earth",
+        "planet": "Saturn",
+        "personality": "Responsible, disciplined, ambitious, patient, and practical.",
+        "description": "Capricorn are hardworking and responsible people who value success, discipline, stability, and long-term goals.",
+        "strengths": [
+            "Disciplined",
+            "Responsible",
+            "Ambitious",
+            "Patient"
+        ],
+        "weaknesses": [
+            "Serious",
+            "Stubborn",
+            "Workaholic",
+            "Pessimistic"
+        ]
+    },
+    {
+        "name": "Aquarius",
+        "symbol": "♒",
+        "date": "January 20 - February 18",
+        "element": "Air",
+        "planet": "Uranus",
+        "personality": "Independent, creative, intelligent, original, and humanitarian.",
+        "description": "Aquarius are independent thinkers who enjoy new ideas, creativity, technology, and helping others.",
+        "strengths": [
+            "Creative",
+            "Independent",
+            "Intelligent",
+            "Original"
+        ],
+        "weaknesses": [
+            "Unpredictable",
+            "Detached",
+            "Stubborn",
+            "Rebellious"
+        ]
+    },
+    {
+        "name": "Pisces",
+        "symbol": "♓",
+        "date": "February 19 - March 20",
+        "element": "Water",
+        "planet": "Neptune",
+        "personality": "Compassionate, imaginative, gentle, emotional, and artistic.",
+        "description": "Pisces are imaginative and compassionate people who enjoy creativity, helping others, and expressing their emotions.",
+        "strengths": [
+            "Compassionate",
+            "Creative",
+            "Gentle",
+            "Imaginative"
+        ],
+        "weaknesses": [
+            "Sensitive",
+            "Escapist",
+            "Overly emotional",
+            "Easily influenced"
+        ]
+    }
+]
